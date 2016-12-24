@@ -38,8 +38,8 @@ class APIHandler(object):
         self.email = email
         self.token = token
 
-    @classmethod
-    def __canBeTeamless(cls, teams, allowTeamless=True):
+    @staticmethod
+    def __canBeTeamless(teams, allowTeamless=True):
         """
         Helper function to determine whether a game can be teamless
         """
@@ -86,8 +86,8 @@ class APIHandler(object):
             teamID += 1
         return players
 
-    @classmethod
-    def __overrideBonuses(cls, bonuses):
+    @staticmethod
+    def __overrideBonuses(bonuses):
         """
         Given a list containing tuples
         with bonus name and new values,
