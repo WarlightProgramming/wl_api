@@ -1,3 +1,6 @@
+import os
+os.chdir("..")
+
 # automated tests for wl_api.py
 
 from nose.tools import *
