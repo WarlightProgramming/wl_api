@@ -1,7 +1,8 @@
-import os
-os.chdir("..")
-
 # automated tests for wl_api.py
+
+import sys
+# sys.path hack @TODO: get rid of this
+sys.path.append('..')
 
 from nose.tools import *
 from wl_api import *
